@@ -8,7 +8,6 @@ public class SignupForm {
         pages.Common.openUrl("https://www.irankiai.lt/signup_form.html");
     }
 
-
     public static void enterEmail(String email) {
         Common.sendKeysToElement(Locators.Irankiai.SignupForm.emailEnter, email);
     }

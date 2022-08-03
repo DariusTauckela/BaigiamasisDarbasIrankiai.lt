@@ -1,10 +1,10 @@
 package pages.irankiai;
 
-import org.testng.annotations.AfterMethod;
 import pages.Common;
 import pages.Locators;
 
 public class AccountLogin {
+
     public static void open() {
         pages.Common.openUrl("https://www.irankiai.lt/customer/account/login/");
     }
@@ -17,7 +17,7 @@ public class AccountLogin {
         Common.sendKeysToElement(Locators.Irankiai.AccountLogin.passwordInput, password);
     }
 
-    public static void enterLoginButton() {
+    public static void clickLoginButton() {
         Common.clickElement(Locators.Irankiai.AccountLogin.buttonPrisijungtiPush);
     }
 

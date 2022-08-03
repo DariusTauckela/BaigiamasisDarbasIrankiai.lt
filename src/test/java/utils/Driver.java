@@ -21,12 +21,12 @@ public class Driver {
         options.addArguments("--force-device-scale-factor=1.0");
 
         driver.set(new ChromeDriver(options));
-      driver.get().manage().window().setSize(new Dimension(1336, 738));
+        driver.get().manage().window().setSize(new Dimension(1336, 738));
         driver.get().manage().timeouts().implicitlyWait(Constants.DURATION_TIMEOUT);
     }
 
-//    public static void closeDriver(){
-//        driver.get().quit();
-//        driver.remove();
-//    }
+    public static void closeDriver() {
+        driver.get().quit();
+        driver.remove();
+    }
 }

@@ -17,7 +17,7 @@ public class SignupForm extends BaseTest {
     }
 
     @Test
-    public void testSubscribeToNewsLetter(){
+    public void testSubscribeToNewsLetter() {
 
         String email = "darkatau3@gmail.com";
         String exceptedMessage = "Dėkojame, kad užsiprenumeravote mūsų naujienas!";
@@ -26,12 +26,8 @@ public class SignupForm extends BaseTest {
         pages.irankiai.SignupForm.enterEmail(email);
         pages.irankiai.SignupForm.selectRadiobuttonPasiulymaiStatybininkams();
         pages.irankiai.SignupForm.pushButtonPrenumeruoti();
-       actualMessage = pages.irankiai.SignupForm.readMessageSubscribeNewsletter();
+        actualMessage = pages.irankiai.SignupForm.readMessageSubscribeNewsletter();
 
         Assert.assertEquals(actualMessage, exceptedMessage);
-
-
-
-
     }
 }

@@ -39,6 +39,7 @@ public class Common {
     public static void acceptCookies(By locator) {
         clickElement(locator);
     }
+
     public static void clickElementByAction(By locator) {
         WebElement element = getElement(locator);
 

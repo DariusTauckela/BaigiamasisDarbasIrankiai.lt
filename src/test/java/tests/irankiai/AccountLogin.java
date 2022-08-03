@@ -17,7 +17,6 @@ public class AccountLogin extends BaseTest {
         pages.Common.acceptCookies(Locators.Irankiai.IrankiaiMainPage.buttonAcceptCookies);
     }
 
-
     @Test
     public void testLoginAccountWithValidData() {
 
@@ -28,7 +27,7 @@ public class AccountLogin extends BaseTest {
 
         pages.irankiai.AccountLogin.enterEmail(email);
         pages.irankiai.AccountLogin.enterPassword(password);
-        pages.irankiai.AccountLogin.enterLoginButton();
+        pages.irankiai.AccountLogin.clickLoginButton();
         actualMessage = pages.irankiai.AccountLogin.readMessage();
 
         Assert.assertEquals(actualMessage, exceptedMessage);
@@ -45,14 +44,14 @@ public class AccountLogin extends BaseTest {
 
         pages.irankiai.AccountLogin.enterEmail(email);
         pages.irankiai.AccountLogin.enterPassword(wrongPassword);
-        pages.irankiai.AccountLogin.enterLoginButton();
+        pages.irankiai.AccountLogin.clickLoginButton();
         actualMessage = pages.irankiai.AccountLogin.readMessageWrongData();
 
         Assert.assertEquals(actualMessage, exceptedMesage);
     }
 
     @AfterMethod
-    public void testsComplete(){
+    public void testsComplete() {
         System.out.println("All tests for AccountLogin are complete.");
     }
 }

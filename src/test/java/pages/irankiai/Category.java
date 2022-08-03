@@ -4,6 +4,7 @@ import pages.Common;
 import pages.Locators;
 
 public class Category {
+
     public static void open() {
         Common.openUrl("https://www.irankiai.lt/akcijos-ir-ispardavimai.html");
     }
