@@ -1,5 +1,6 @@
 package pages.irankiai;
 
+import org.testng.annotations.AfterMethod;
 import pages.Common;
 import pages.Locators;
 
