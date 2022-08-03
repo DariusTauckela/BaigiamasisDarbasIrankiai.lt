@@ -18,5 +18,19 @@ public class Locators {
                     "//*[@id='yt_main']/div/div[2]/h1");
             public static By buttonSearch = By.xpath("//*[@id='search_mini_form']/div/button");
         }
+
+        public static class AccountLogin {
+
+            public static By emailInput = By.xpath(
+                    "//*[@id='email']");
+            public static By passwordInput = By.xpath(
+                    "//*[@id='pass']");
+            public static By buttonPrisijungtiPush = By.xpath(
+                    "//*[@id='send2']");
+            public static By loginMessage = By.xpath(
+                    "//*[@id='yt_main']/div/div/div/div[2]/p[1]/strong");
+            public static By messageWrongData = By.xpath(
+                    "//*[@id='yt_main']/div/div/div/div/div/ul/li/ul/li/span");
+        }
     }
 }

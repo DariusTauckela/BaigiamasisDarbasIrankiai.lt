@@ -34,4 +34,8 @@ public class Common {
     public static String getElementText(By locator) {
         return getElement(locator).getText();
     }
+
+    public static void acceptCookies(By locator) {
+        clickElement(locator);
+    }
 }
