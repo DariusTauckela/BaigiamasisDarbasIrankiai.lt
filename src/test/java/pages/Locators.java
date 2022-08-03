@@ -6,7 +6,6 @@ public class Locators {
 
     public static class Irankiai {
 
-
         public static class IrankiaiMainPage {
 
             public static By formAd = By.xpath(
@@ -34,6 +33,7 @@ public class Locators {
             public static By messageWrongData = By.xpath(
                     "//*[@id='yt_main']/div/div/div/div/div/ul/li/ul/li/span");
         }
+
         public static class SignupForm {
 
             public static By emailEnter = By.xpath(
@@ -44,6 +44,15 @@ public class Locators {
                     "//*[@id='mc-embedded-subscribe']");
             public static By messageSubscribeNewsletter = By.xpath(
                     "//*[@id='yt_main']/div/div/div/div[2]/div[1]/h1");
+        }
+
+        public static class Category {
+            public static By droplistAllCategories = By.xpath(
+                    "//*[@id='btn_categories']/span");
+            public static By buttonPerforatoriai = By.xpath(
+                    "//*[@id='sm_megamenu_242']/span");
+            public static By perforatoriaiHeader = By.xpath(
+                    "//*[@id='page-title-wrap']/div[1]/h1");
         }
     }
 }
