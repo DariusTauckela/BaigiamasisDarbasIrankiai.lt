@@ -18,7 +18,7 @@ public class SignupForm extends BaseTest {
     @Test
     public void testSubscribeToNewsLetter() {
 
-        String email = "darkatau3@gmail.com";
+        String email = "darkatau13@gmail.com";
         String exceptedMessage = "Dėkojame, kad užsiprenumeravote mūsų naujienas!";
         String actualMessage;
 
