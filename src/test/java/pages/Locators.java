@@ -9,9 +9,9 @@ public class Locators {
         public static class IrankiaiMainPage {
 
             public static By formAd = By.xpath(
-                    "//*[@id='notice-cookie-block']/div/table/tbody/tr/td[2]/div/p");
+                    "//*[@class='notice-text']");
             public static By buttonAcceptCookies = By.xpath(
-                    "//*[@id='notice-cookie-block']/div/table/tbody/tr/td[1]/div/button");
+                    "//*[@class='actions']");
             public static By messageInput = By.xpath(
                     "//*[@id='search']");
             public static By messageField = By.xpath(
@@ -29,9 +29,9 @@ public class Locators {
             public static By buttonPrisijungtiPush = By.xpath(
                     "//*[@id='send2']");
             public static By loginMessage = By.xpath(
-                    "//*[@id='yt_main']/div/div/div/div[2]/p[1]/strong");
+                    "//*[@class='hello']");
             public static By messageWrongData = By.xpath(
-                    "//*[@id='yt_main']/div/div/div/div/div/ul/li/ul/li/span");
+                    "//*[@class='error-msg']");
         }
 
         public static class SignupForm {
@@ -43,7 +43,7 @@ public class Locators {
             public static By buttonPrenumeruotiPush = By.xpath(
                     "//*[@id='mc-embedded-subscribe']");
             public static By messageSubscribeNewsletter = By.xpath(
-                    "//*[@id='yt_main']/div/div/div/div[2]/div[1]/h1");
+                    "//*[@class='page-title']");
         }
 
         public static class Category {
