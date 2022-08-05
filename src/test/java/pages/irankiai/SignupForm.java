@@ -24,4 +24,9 @@ public class SignupForm {
         pages.Common.openUrl("https://www.irankiai.lt/confirmation_thank_you_page.html");
         return Common.getElementText(Locators.Irankiai.SignupForm.messageSubscribeNewsletter);
     }
+
+    public static void acceptCookies() {
+        Common.waitForElementToBeVisible(Locators.Irankiai.IrankiaiMainPage.formAd);
+        Common.clickElement(Locators.Irankiai.IrankiaiMainPage.buttonAcceptCookies);
+    }
 }

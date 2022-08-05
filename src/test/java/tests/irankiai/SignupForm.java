@@ -3,7 +3,6 @@ package tests.irankiai;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-import pages.Locators;
 import tests.BaseTest;
 
 public class SignupForm extends BaseTest {
@@ -13,7 +12,7 @@ public class SignupForm extends BaseTest {
     public void setUp() {
         super.setUp();
         pages.irankiai.SignupForm.open();
-        pages.Common.acceptCookies(Locators.Irankiai.IrankiaiMainPage.buttonAcceptCookies);
+        pages.irankiai.SignupForm.acceptCookies();
     }
 
     @Test
