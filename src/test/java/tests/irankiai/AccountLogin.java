@@ -4,7 +4,6 @@ import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-import pages.Locators;
 import tests.BaseTest;
 
 public class AccountLogin extends BaseTest {
@@ -14,7 +13,7 @@ public class AccountLogin extends BaseTest {
     public void setUp() {
         super.setUp();
         pages.irankiai.AccountLogin.open();
-        pages.Common.acceptCookies(Locators.Irankiai.IrankiaiMainPage.buttonAcceptCookies);
+        pages.irankiai.AccountLogin.acceptCookies();
     }
 
     @Test

@@ -5,6 +5,11 @@ import pages.Locators;
 
 public class AccountLogin {
 
+    public static void acceptCookies(){
+        Common.waitForElementToBeVisible(Locators.Irankiai.IrankiaiMainPage.formAd);
+        Common.clickElement(Locators.Irankiai.IrankiaiMainPage.buttonAcceptCookies);
+    }
+
     public static void open() {
         pages.Common.openUrl("https://www.irankiai.lt/customer/account/login/");
     }
